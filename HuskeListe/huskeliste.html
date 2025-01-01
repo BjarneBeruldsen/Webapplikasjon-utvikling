@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huskeliste</title>
+    <link rel="stylesheet" href="huskeliste.css" />
+
+    <!--
+        KILDE
+        Dette er en forenkling av følgende eksempel på w3schools:
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo    
+    -->
+    <script src="huskeliste.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Huskeliste</h1>
+      <input type="text" id="oppgave" placeholder="Oppgave..." />
+      <button id="nyKnapp" onclick="leggTilListe()">Legg til</button>
+      <div id="melding">&nbsp;</div>
+    </header>
+
+    <ul id="huskeliste">
+      <li id ="o1" onmouseover="mOver(this)" onmouseout="mOut(this)">Kjøpe mat</li>
+      <li id ="o2" onmouseover="mOver(this)" onmouseout="mOut(this)" onclick="slettOppgave(this)">Vaske huset</li>
+    </ul>
+  </body>
+</html>
