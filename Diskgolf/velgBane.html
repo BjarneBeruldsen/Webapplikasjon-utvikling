@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velg Bane</title>
+    <link href="../dist/tailwind.css" rel="stylesheet">
+    <title>DiskNOR</title>
+    <link rel="icon" href="img/designer.jpeg">
+</head>
+<body class = "bg-blue-400">
+    <!--Navbar-->
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+        <!--Logo/tittel-->
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <a href="index.html" class="font-bold text-xl">DiskNOR</a>
+        </div>
+        </div>
+
+        <!--Gjør den responsiv-->
+        <div class="w-full block flex-grow sm:flex sm:items-center sm:w-auto">
+            <div class="text-sm sm:flex-grow">
+                <!--Lenker-->
+                <a href="index.html" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
+                    Hjem
+                </a>
+                <a href="#omoss" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white mr-4">
+                    Om oss
+                </a>
+                <a href="#kontakt" class="block mt-4 sm:inline-block sm:mt-0 text-teal-200 hover:text-white">
+                    Kontakt
+                </a>
+            </div>
+            <div>
+                <button class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 sm:mt-0" onclick="myFunction()">Logg inn</button>
+                <button class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 sm:mt-0">Opprett ny bruker</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- kort komponenter for å velge bane-->
+    <div class="container mt-5">
+        <div class="md:flex">
+            <div class="flex-1 text-center bg-teal-200  px-5 py-5 m-2 sm:my-8 rounded">
+                <div class="lg:flex lg:items-center">
+                    <div class="lg:flex-shrink-0">
+                        <img src="img/hisøy.jpg" alt="Bane på Hisøy" class="rounded lg:w-64">
+                    </div>
+                    <button class="bg-blue-500 text-white px-4-py-2 rounded font-bold text-lg lg:ml-6 my-10" onclick="endreBilde('hisøy')">
+                        Hisøy
+                    </button>
+                    <button class="bg-blue-500 text-white px-4-py-2 rounded font-bold text-lg lg:ml-6 my-10" onclick="endreBilde('myra')">
+                        Myra
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="myScript.js"></script>
+</body>
+</html>
