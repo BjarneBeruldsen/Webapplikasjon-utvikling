@@ -19,7 +19,7 @@ const Sovn = () => {
             antallTimer
         };
 
-        fetch('https://baby-app123321-1af15b4e337d.herokuapp.com/sovn', {
+        fetch(`${process.env.REACT_APP_API_URL}/sovn`, {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(sovnData)

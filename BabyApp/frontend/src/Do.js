@@ -14,7 +14,7 @@ const Do = () => {
             mengde: e.target.vol.value
         };
 
-        fetch('https://baby-app123321-1af15b4e337d.herokuapp.com/do', {
+        fetch(`${process.env.REACT_APP_API_URL}/do`, {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(doData)

@@ -12,7 +12,7 @@ const Mat = () => {
         e.preventDefault(); 
         const mat = { idag, typeMat, mengdeSpist, klSlett };
 
-        fetch('https://baby-app123321-1af15b4e337d.herokuapp.com/mat', { // Oppdater URL-en her
+        fetch(`${process.env.REACT_APP_API_URL}/mat`, {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(mat)
@@ -24,7 +24,6 @@ const Mat = () => {
     }
 
     useEffect(() => {
-        // Splitter til format som passer HTML skjema for dato
         const dagensDato = new Date().toISOString().split('T')[0];
         setIdag(dagensDato);
     }, []);
